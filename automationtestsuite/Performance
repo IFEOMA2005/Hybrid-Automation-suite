@@ -1,0 +1,13 @@
+JMETER START DO THE FOLLOWING
+Navigate to the folder
+cd folder - apache-jmeter-3.3
+cd bin
+and then do the following
+
+java -jar ApacheJMeter.jar
+
+
+TO CLICK ON A BUTTON
+    /*WebElement fixture = driver.findElement(By.xpath("//*[@id='prematch-fixtures']"));
+    JavascriptExecutor executor = (JavascriptExecutor) driver;
+    executor.executeScript("arguments[0].click();", fixture);*/
