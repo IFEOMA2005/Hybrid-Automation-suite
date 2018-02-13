@@ -47,11 +47,11 @@ public class ReportTest {
             System.out.println("No social share icons are present");
         }
 
-        List<WebElement> socialIcons = driver.findElement(By.xpath("")).
+      //  List<WebElement> socialIcons = driver.findElement(By.xpath("")).isDisplayed()
 
     }
 
-}
+
 
 
 @After
