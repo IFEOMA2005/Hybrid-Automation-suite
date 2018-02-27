@@ -17,5 +17,8 @@ public class ArticleComment {
         //driver.manage().window().fullscreen();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("http://www.dailymail.co.uk/sport/index.html");
-    }
+ 
+   }
+    
+    public void article
 }
