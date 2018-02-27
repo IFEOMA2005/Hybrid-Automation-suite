@@ -16,13 +16,13 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class BrokenLinks {
-    static WebDriver driver;
+     WebDriver driver;
     String line = ("*****************************************************************");
 
-    @Before
 
+    @Before
     public void setup() {
-        System.setProperty("webdriver.gecko.driver", "/Users/alihawker/Desktop/Webdrivers/gecko/geckodriver");
+        System.setProperty("webdriver.chrome.driver", "/Users/alihawker/Desktop/Webdrivers/chrome/chromedriver");
         driver = new FirefoxDriver();
         //WebDriver driver = new SafariDriver();
         //driver.manage().window().fullscreen();

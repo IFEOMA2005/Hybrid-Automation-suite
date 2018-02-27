@@ -1,12 +1,15 @@
 package TestSuites;
 
+import org.junit.After;
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -21,11 +24,10 @@ public class LoginPage {
     WebElement element;
 
 
-    @BeforeTest
-
+@Before
     public void setup() {
-        System.setProperty("webdriver.chrome.driver", "/Users/alisonhawker/Desktop/selenium-webdriver/chrome/chromedriver");
-        driver = new ChromeDriver();
+        System.setProperty("webdriver.gecko.driver", "/Users/alihawker/Desktop/Webdrivers/gecko/geckodriver");
+        driver = new FirefoxDriver();
         driver.manage().deleteAllCookies();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         //driver.manage().window().fullscreen();
@@ -37,6 +39,8 @@ public class LoginPage {
 
     @Test
     public void loginTest() throws Exception {
+       // ExtentReports Description
+        //ExtentTestManager.getTest().setDescription("Direct Login"); // Please remember to uncomment this
         String emailAddress = "uzo80@hotmail.com";
         String password = "Lordis1234.";
         WebElement element = driver.findElement(By.cssSelector(".js-login"));
@@ -250,10 +254,10 @@ public class LoginPage {
     // public static void wrongPassword() throws Exception{}
 
 
-    @AfterTest
+  @After
     public void tearDown() {
 
-        driver.close();
+        driver.quit();
     }
 
 }

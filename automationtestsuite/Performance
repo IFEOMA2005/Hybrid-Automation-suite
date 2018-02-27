@@ -11,3 +11,10 @@ TO CLICK ON A BUTTON
     /*WebElement fixture = driver.findElement(By.xpath("//*[@id='prematch-fixtures']"));
     JavascriptExecutor executor = (JavascriptExecutor) driver;
     executor.executeScript("arguments[0].click();", fixture);*/
+
+TO UNINSTALL JAVA 9
+1. Navigate to /Library/Java/JavaVirtualMachine
+2. sudo rm -rf jdk-9
+https://community.phantombot.tv/t/can-not-seem-to-downgrade-java-9-to-8-help-please-macbook-user/2498/2
+ http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.htm
+ http://osxdaily.com/2017/06/16/uninstall-java-mac/
