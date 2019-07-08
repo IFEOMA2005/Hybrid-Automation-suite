@@ -20,7 +20,7 @@ public class ArticlePage {
 
     @BeforeTest
     public void setup () {
-        System.setProperty("webdriver.firefox.driver", "/Users/alisonhawker/Desktop/selenium-webdriver/firefox/geckodriver");
+        System.setProperty("webdriver.firefox.driver", "//Users/Desktop/Webdrivers/chrome/chromedriver");
         driver = new ChromeDriver();
         driver.manage().deleteAllCookies();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
