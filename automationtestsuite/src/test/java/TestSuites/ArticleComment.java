@@ -11,7 +11,7 @@ public class ArticleComment {
 
     @BeforeTest
     public void setup(){
-        System.setProperty("webdriver.chrome.driver", "/Users/alihawker/Desktop/Webdrivers/chrome/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "//Users/Desktop/Webdrivers/chrome/chromedriver");
         driver = new ChromeDriver();
         //WebDriver driver = new SafariDriver();
         //driver.manage().window().fullscreen();
