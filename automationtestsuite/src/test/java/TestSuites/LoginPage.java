@@ -26,7 +26,7 @@ public class LoginPage {
 
 @Before
     public void setup() {
-        System.setProperty("webdriver.gecko.driver", "/Users/alihawker/Desktop/Webdrivers/gecko/geckodriver");
+        System.setProperty("webdriver.gecko.driver", "/Users/hi/Desktop/Webdrivers/gecko/geckodriver");
         driver = new FirefoxDriver();
         driver.manage().deleteAllCookies();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -41,8 +41,8 @@ public class LoginPage {
     public void loginTest() throws Exception {
        // ExtentReports Description
         //ExtentTestManager.getTest().setDescription("Direct Login"); // Please remember to uncomment this
-        String emailAddress = "uzo80@hotmail.com";
-        String password = "Lordis1234.";
+        String emailAddress = "**************";
+        String password = "***********.";
         WebElement element = driver.findElement(By.cssSelector(".js-login"));
         highLight(element);
         Thread.sleep(700);
@@ -156,8 +156,8 @@ public class LoginPage {
         } else {
             System.out.println("Facebook Login Page Failed");
         }
-        driver.findElement(By.id("email")).sendKeys("testmolfb6@gmail.com");
-        driver.findElement(By.id("pass")).sendKeys("testmol");
+        driver.findElement(By.id("email")).sendKeys("***************");
+        driver.findElement(By.id("pass")).sendKeys("**********l");
         driver.findElement(By.id("loginbutton")).click();
         Thread.sleep(3000);
         driver.navigate().to("http://www.dailymail.co.uk");
@@ -200,8 +200,8 @@ public class LoginPage {
         } else {
             driver.navigate().to("https://secured.dailymail.co.uk/registration/login.html?targetUrl=http://www.dailymail.co.uk/home/index.html&geolocation=gb");
         }
-        driver.findElement(By.id("username_or_email")).sendKeys("testmoltw13");
-        driver.findElement(By.id("password")).sendKeys("testmol");
+        driver.findElement(By.id("username_or_email")).sendKeys("te*******.***");
+        driver.findElement(By.id("password")).sendKeys("t*********");
         driver.findElement(By.id("allow")).click();
 
         if (driver.findElement(By.id("logout")).isDisplayed()) {
@@ -228,9 +228,9 @@ public class LoginPage {
             System.out.println("GoogleLogin Page - Not Displayed");
         }
         driver.findElement(By.xpath("//*[@id='signin-page']/ul/li[3]/input")).click();
-        driver.findElement(By.id("identifierId")).sendKeys("testmolfb6@gmail.com");
+        driver.findElement(By.id("identifierId")).sendKeys("t***************");
         driver.findElement(By.id("identifierNext")).click();
-        driver.findElement(By.name("password")).sendKeys("testmolfb");
+        driver.findElement(By.name("password")).sendKeys("**************");
 
         WebElement element = driver.findElement(By.id("passwordNext"));
         Actions actions = new Actions(driver);
