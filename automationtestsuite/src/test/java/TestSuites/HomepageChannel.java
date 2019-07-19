@@ -22,7 +22,7 @@ public class HomepageChannel {
 
   @BeforeTest
   public static void setup() {
-      System.setProperty("webdriver.chrome.driver", "/Users/alihawker/Desktop/Webdrivers/chrome/chromedriver");
+      System.setProperty("webdriver.chrome.driver", "/Users/ker/Desktop/Webdrivers/chrome/chromedriver");
       driver = new ChromeDriver();
       //WebDriver driver = new SafariDriver();
       //driver.manage().window().fullscreen();
