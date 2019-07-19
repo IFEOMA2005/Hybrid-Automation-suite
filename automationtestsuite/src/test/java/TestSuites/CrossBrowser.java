@@ -13,7 +13,7 @@ public class CrossBrowser {
     public void verifyBrowser(String browser) {
 
         if (browser.equalsIgnoreCase("FF")) {
-            System.setProperty("webdriver.gecko.driver", "/Users/alihawker/Desktop/Webdrivers/gecko/geckodriver");
+            System.setProperty("webdriver.gecko.driver", "/Users/ker/Desktop/Webdrivers/gecko/geckodriver");
 
             WebDriver driver = new FirefoxDriver();
 
@@ -25,7 +25,7 @@ public class CrossBrowser {
 
         } else if (browser.equalsIgnoreCase("CH")) {
 
-            System.setProperty("webdriver.chrome.driver", "/Users/alihawker/Desktop/Webdrivers/chrome/chromedriver");
+            System.setProperty("webdriver.chrome.driver", "/Users/ker/Desktop/Webdrivers/chrome/chromedriver");
 
             WebDriver driver = new ChromeDriver();
 
