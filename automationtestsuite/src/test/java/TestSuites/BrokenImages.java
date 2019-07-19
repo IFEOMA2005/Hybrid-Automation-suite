@@ -20,7 +20,7 @@ public class BrokenImages {
     @Before
 
     public void setup () {
-        System.setProperty("webdriver.chrome.driver", "/Users/alihawker/Desktop/Webdrivers/chrome/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/Users/?????/Desktop/Webdrivers/chrome/chromedriver");
         driver = new ChromeDriver();
         driver.manage().window().fullscreen();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
